@@ -2,19 +2,63 @@
 <html lang="en">
 	<head>
 		<title>tagNet</title>
+		<style>
+			* 
+			{
+				/*height and width of all the elements include padding and the borders */
+				box-sizing: border-box; 
+			}
+
+			body 
+			{
+				margin: 0; 				/* all the four margins are 0 */
+				font-family: Arial;		
+				font-size: 17px;
+			}
+
+			#myVideo 
+			{
+				position: fixed;		/* positioned relative to the viewport, i.e. stays in the same place even if the page is scrolled: */
+				right: 0;
+				bottom: 0;
+				min-width: 100%; 		/* defines the minimum height of an element. */
+				min-height: 100%;
+			}
+
+			.content 
+			{
+				position: fixed;
+				bottom: 50%;
+				background: rgba(0, 0, 0, 0.5);		/* translucent black background */
+				color: #f1f1f1;
+				width: 100%;
+				padding: 20px;
+			}
+		</style>
 	</head>
 
-	<body>					
-		<h5>GECE Presents</h5>
-		<h3>#tagNet</h3>
-		<h2>I want to...</h2>
-		<form method="post">
-			<button type="submit" formaction="2uploadform.html">Upload</button>
-			<button formaction="down.php">Download</button>
-			<button type="submit" id="user" formaction="../magnet/index.php">Share Privately?</button>
-		</form>				
-		<div>
-			<h5>Currently accessible only from the 2nd Floor of Tagore Bhawan</h5>
-		</div>	
+	<body>
+		
+		<!-- video background -->
+		<video autoplay muted loop id="myVideo">
+			<source src="img/Technology Background.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+		</video>
+		
+		<!-- Main content -->
+		<div class="content">
+			<h5>GECE Presents</h5>
+			<h3>#tagNet</h3>
+			<h2>I want to...</h2>
+			<form method="post">
+				<button type="submit" formaction="2uploadform.html">Upload</button>
+				<button formaction="down.php">Download</button>
+				<button type="submit" id="user" formaction="../magnet/index.php">Share Privately?</button>
+			</form>				
+			<div>
+				<h5>Currently accessible only from the 2nd Floor of Tagore Bhawan</h5>
+			</div>
+		</div>
+		
 	</body>
 </html>
