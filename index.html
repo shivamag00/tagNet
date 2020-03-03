@@ -2,6 +2,10 @@
 <html lang="en">
 	<head>
 		<title>tagNet</title>
+		
+		<!-- Including CSS fonts -->
+		<link rel="stylesheet" href="css/fonts.css"> 
+		
 		<style>
 			* 
 			{
@@ -18,8 +22,9 @@
 
 			#myVideo 
 			{
+				z-index:-1;				/* sending video to back */
 				position: fixed;		/* positioned relative to the viewport, i.e. stays in the same place even if the page is scrolled: */
-				right: 0;
+				right: 0;				/* fixes the position of the right edge of the element */
 				bottom: 0;
 				min-width: 100%; 		/* defines the minimum height of an element. */
 				min-height: 100%;
@@ -27,12 +32,14 @@
 
 			.content 
 			{
-				position: fixed;
-				bottom: 50%;
+				margin:auto;						/* Horizontal center align the div */
+				vertical-align:middle;
 				background: rgba(0, 0, 0, 0.5);		/* translucent black background */
 				color: #f1f1f1;
-				width: 100%;
+				width: 50%;
 				padding: 20px;
+				transform: translateY(50%);
+				
 			}
 		</style>
 	</head>
@@ -47,9 +54,9 @@
 		
 		<!-- Main content -->
 		<div class="content">
-			<h5>GECE Presents</h5>
-			<h3>#tagNet</h3>
-			<h2>I want to...</h2>
+			<h5 style="text-align:center; font-family: 'Josefin Sans', sans-serif; font-size: 20px;">GECE Presents</h5>
+			<h3 style="text-align:center">#tagNet</h3>
+			<h2 style="text-align:center">I want to...</h2>
 			<form method="post">
 				<button type="submit" formaction="2uploadform.html">Upload</button>
 				<button formaction="down.php">Download</button>
