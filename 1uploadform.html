@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>File Upload Form</title>
+	<title>tagNet</title>
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styleUpload.css">
 </head>
+
 <body>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <h2>Upload File</h2>
-		
-		<label>Name of the File:</label>
-		<input type="text" placeholder="Enter File Name" name="Filename" required></input>
-		<br>
-		<label>File</label>
+	<a href="index.html">#tagNet</a>
+	<p>Give your file a name that could easily be searched for...</p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="text" class="form-control" name="Filename"> 
+		<label>File Name</label>
 		<input type="file" name="actfile">
-		<br>
-		<input type="submit" name="submit" value="Upload">
-    </form>
+		<input type="submit" name="submit" value="Upload"></input>
+	</form>
 </body>
 </html>
