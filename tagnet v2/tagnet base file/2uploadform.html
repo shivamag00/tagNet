@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>tagNet</title>
+	
+		<!-- Including CSS fonts -->
+		<link rel="stylesheet" href="css/fonts.css"> 
+		<link rel="stylesheet" href="customcss.css">
+	</head>
+
+	<body>
+	
+		<!-- Video background -->
+		<video autoplay muted loop id="myVideo">
+			<source src="img/Technology Background.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+		</video>
+	
+	
+		<!-- Header -->
+		<div class="header" style="height:5%; text-align:left;">
+				<a title="Home Page" href="index.html" class="glow mainhead" style="margin-left:2%; text-decoration:none; color:white; font-size:200%">#tagnet</a>
+		</div>
+		
+		
+		<!-- Main Content -->
+		<div class="content" style="transform: translateY(70%);">
+			<h5 class="shorthead">Give your file a name that could easily be searched for...</h5>
+			<br>
+			<br>
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<label class="shorthead">File Name:   </label>
+				<input type="text" name="Filename" style="margin-left:10%;"></input>
+				<br>
+				<br>
+				<div style="text-align:left;">
+					<label style="margin-left:0%" class="shorthead">Uploaded File:</label>
+					<input type="file" name="actfile" style="margin-left:5%";></input>
+				</div>
+				<br>
+				<br>
+				<div style="text-align:center;">
+					<input type="submit" name="submit" value="Upload"></input>
+				</div>
+			</form>
+		</div>
+
+
+	</body>
+</html>
